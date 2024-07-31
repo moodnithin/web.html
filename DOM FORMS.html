@@ -1,0 +1,49 @@
+<html>
+<head>
+<script>
+function Form() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<form name="myForm"  onsubmit="return Form()" method="post">
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+
+<form method="post">
+     <input type="text" name="fname" required> 
+     <input type="submit" value="submit">
+</form>
+
+
+<input id="demo1">
+<button type="button" onclick="nithin()">submit</button>
+<p id="deo2"></p>
+<script>
+    function nithin() {
+        let x=document.getElementById("demo1").value;
+    let text;
+    if (x<1 || x>10) {
+        text="input not valid";
+    } else {
+        text="input ok";
+    }
+    
+    document.getElementById("deo2").innerHTML=text;
+
+}
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <input type="button" value="new web" onclick="myfunction()">
+
+    <script>
+        document.getElementById("demo").innerHTML=window.location.protocol;
+
+        function myfunction() {
+            window.location.assign("https://www.w3schools.com/js/tryit.asp?filename=tryjs_loc_assign")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+
+    <p id="demo"></p>
+
+    <p id="demo1"></p>
+    <p id="demo3"></p>
+
+    <script>
+        const car=["bnw","nithin","benz"];
+
+        let type="";
+        for(let x in car) {
+            type +=car[x]+"<br> ";
+        }
+
+        document.getElementById("demo").innerHTML=type;
+
+
+        let text="";
+        let i=0;
+        while (i<10){
+            text+="<br>"+i;
+            i++;
+        }
+        document.getElementById("demo1").innerHTML=text;
+
+
+        let nithin=0;
+        while(nithin<10){
+        console.log(nithin);
+        i++;
+        }
+        document.getElementById("demo3").innerHTML=console.log();
+    </script>
+    
+</body>
+</html>

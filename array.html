@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+
+    <p id="demo"></p>
+
+    <p id="demo1"></p>
+
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <button onclick="sorts()">numaric sort</button>
+    <button onclick="nithin()">prime sort</button>
+    <p id="demo4"></p>
+    
+
+    <script>
+        const names=["nithin","pavan","charan"];
+        document.getElementById("demo").innerHTML=names.reverse();
+
+
+const bikes=["ns","fz","rr"]
+const models=bikes.toReversed();
+document.getElementById("demo1").innerHTML=models;
+
+
+const numbers=[4,8,2,7,0,9,1];
+document.getElementById("demo2").innerHTML=numbers;
+
+numbers.sort(function(a,b){return(b-a)} );
+document.getElementById("demo2").innerHTML=numbers;
+
+
+const number=[888009,55,33,523,785];
+document.getElementById("demo4").innerHTML=number;
+
+function sorts() {
+  number.sort();
+  document.getElementById("demo4").innerHTML=number;
+}
+
+function nithin() {
+    number.sort(function(a,b){return(a-b)});
+    document.getElementById("demo4").innerHTML=number;
+}
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

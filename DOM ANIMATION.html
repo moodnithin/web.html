@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<style>
+    #n {
+        height: 400px;
+        width: 300px;
+        background-color: rgb(134, 134, 200);
+        position: absolute;
+    }
+
+    #m {
+        height: 200px;
+        width: 150px;
+        background-color: rgb(200, 148, 148);
+        position: absolute;
+    }
+</style>
+<html lang="en">
+
+<head>
+    
+</head>
+<body>
+    <p ><button onclick="myMove()">Clickme</button></p>
+    <div id="n">nithin<div id="m">naik</div></div>
+
+    <script>
+        function myMove() {
+          let id = null;
+          const elem = document.getElementById("m");   
+          let pos = 0;
+          clearInterval(id);
+          id = setInterval(frame, 5);
+          function frame() {
+            if (pos == 350) {
+              clearInterval(id);
+            } else {
+              pos++; 
+              elem.style.top = pos + "px"; 
+              elem.style.left = pos + "px"; 
+            }
+          }
+        }
+        </script>
+</body>
+</html>

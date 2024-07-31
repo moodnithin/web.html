@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+
+    <script>
+        function mydisplayer(some) {
+            document.getElementById("demo").innerHTML= some;  
+        }
+       
+        function nithin() {
+            mydisplayer("hi");
+        }
+        function charan() {
+            mydisplayer("hello");
+        }
+
+      
+        charan();
+        nithin();
+
+
+    setTimeout(myfunction,5000);
+    function myfunction() {
+    document.getElementById("demo1").innerHTML="i hate nithin";
+    };
+
+
+    setInterval(time,2000);
+    function time() {
+        let t=new Date();
+        document.getElementById("demo2").innerHTML=
+        t.getHours()+":"+
+        t.getMinutes()+":"+
+        t.getSeconds()+":"+
+        t.getDate()+":"+
+        t.getMonth()+":"+
+        t.getFullYear();
+    }
+        
+    </script>
+    
+</body>
+</html>

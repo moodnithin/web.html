@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>hi</p>
+    <p>hello</p>
+    <p>bye</p>
+    <p>nithin</p>
+     
+    <button onclick="coll()">try it</button>
+
+    <script>
+         function coll() {
+            const mycollection = document.getElementsByTagName("p");
+            for(i=0; i< mycollection.length;i++){
+                mycollection[i].style.color="red";
+            }
+         }
+    </script>
+</body>
+</html>

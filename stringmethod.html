@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <button onclick="myfunction()">try it?</button>
+    <p id="demo2">nnnn</p>
+
+    <button onclick="myfunction()">change words</button>
+    <P id="demo5">HELLO WORLD</P>
+    <script> 
+        let alpathes="jhcjjdmdmddhgn";
+        document.getElementById("demo").innerHTML=alpathes.length;
+
+        let alpathe="jhcjjdm dmddhgn";
+        document.getElementById("demo1").innerHTML=alpathes.charCodeAt(0);
+
+
+    // function myfunction() {
+    //     let text=
+    //     document.getElementById("demo2").innerHTML;
+    //     document.getElementById("demo2").innerHTML=text.toLowerCase();
+        
+    // }
+
+
+    
+    function myfunction() {
+        let text=
+        document.getElementById("demo2").innerHTML;
+        document.getElementById("demo2").innerHTML=text.replace("nithin","naik");
+
+    }
+    </script>
+    
+</body>
+</html>

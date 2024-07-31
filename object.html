@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <p id="demo2"></p>
+
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <p id="demo6"></p>
+
+    <p id="demo7"></p>
+
+    <p id="demo8"></p>
+
+    <script>
+        let car="falt"
+        document.getElementById("demo").innerHTML="car:"+car;
+
+        const cars={type:"falt", model:"5x5",color:"red"}
+        document.getElementById("demo1").innerHTML=cars.model;
+
+        const person={name:"nithin", age:23,gender:"male"}
+        document.getElementById("demo2").innerHTML=person.name+" "+person.age+" "+person.gender;
+        
+        const persons = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+ 
+  fullName: function() {
+    return (this.firstName + " " + this.lastName).toUpperCase;
+  }
+};
+
+
+document.getElementById("demo3").innerHTML = persons.fullName();
+
+const personss = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+}
+delete personss["id"];
+delete personss["lastName"];
+document.getElementById("demo4").innerHTML = personss.firstName+" "+personss.id+" "+personss.lastName;
+
+
+const mycars={
+  name:"audi",
+  model:"BN",
+  cars:{
+    car1:"brnz",
+    car2:"jagavar",
+    car3:"ranrover"
+  }
+}
+let a1="cars";
+let a2="car3";
+document.getElementById("demo6").innerHTML=mycars[a1][a2];
+
+const parson = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+};
+parson.name = function() {
+  return (this.firstName + " " + this.lastName).toUpperCase();
+};
+document.getElementById("demo7").innerHTML =
+"My father is " + parson.name(); 
+
+
+const anil={
+  firstname: "pavan",
+  lastname:"kalyan",
+  age:22,
+
+}
+document.getElementById("demo8").innerHTML=JSON.stringify(anil);
+
+
+
+
+        </script>
+</body>
+</html>

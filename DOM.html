@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <div id="main"><p>sdffvwvrbrvrtbrvw</p></div>
+    <p id="demo"></p>
+
+    <div class="qwe">hello laptop </div>
+    <p id="demo2"></p>
+
+    <form id="frm1">
+        firstname=<input type="text" name="fname" value="nithin"><br>
+        lastname=<input type="text" name="lname"><br><br>
+        <input type="submit">
+    </form>
+    
+    <p id="demo3"></p>
+
+
+    <script>
+       const x = document.getElementById("main");
+const y = x.getElementsByTagName("p");
+
+document.getElementById("demo").innerHTML = 
+ y[1].innerHTML;
+
+const a=document.getElementsByClassName("qwe");
+document.getElementById("demo2").innerHTML=a[0].innerHTML;
+
+const n = document.forms["frm1"];
+let text = "";
+for (let i = 0; i < n.length ;i--) {
+  text += n.elements[i].value + "<br>";
+}
+document.getElementById("demo3").innerHTML = text;
+
+
+
+
+    </script>
+</body>
+</html>

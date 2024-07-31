@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+
+    <p id="demo">good morning</p>
+
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+
+
+    <script>
+        if(new Date().getHours()<18){
+            document.getElementById("demo").innerHTML="mid night day"
+        }
+
+
+        const nithin=new Date().getHours()
+        let greating;
+
+        if(nithin<11){
+        greating="good morning";
+        }
+        else{
+            greating="good night"
+        };
+
+        document.getElementById("demo2").innerHTML=greating;
+        
+
+
+        const day=new Date().getHours();
+        let wish;
+
+        if(day>19){
+            wish="good evning";
+        }else if(day<20){
+            wish="good day";
+        }
+        else{
+            wish="good night";
+        }
+        document.getElementById("demo3").innerHTML=wish;
+    </script>
+    
+</body>
+</html>
